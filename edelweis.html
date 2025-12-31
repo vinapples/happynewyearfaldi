@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>pilih lagu ♡</title>
+  <link rel="stylesheet" href="styles/edelweis-style.css"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h1>Select Song</h1>
+
+<button onclick="playSong('https://open.spotify.com/track/1lORkxEMmsCZqhoxcmk3A3?si=xqFUOHbrQJCgnix6Aojjiw')">
+    𝓝𝓸𝓽𝓱𝓲𝓷𝓰 - 𝓑𝓻𝓾𝓷𝓸 𝓜𝓪𝓳𝓸𝓻
+</button>
+
+<button onclick="playSong('https://open.spotify.com/track/6DH13QYXK7lKkYHSU88N48?si=G6PBr18zQ9GnGWo_mnfn4g')">
+    𝓦𝓱𝓸 𝓚𝓷𝓸𝔀𝓼 - 𝓓𝓪𝓷𝓲𝓮𝓵 𝓒𝓪𝓮𝓼𝓪𝓻
+</button>
+
+<button onclick="playSong('https://open.spotify.com/track/4M1wfKr9MlDT2jVgDCMAnA?si=OLCm33-xRKmx20EQv2VO5A')">
+    𝓪𝓷𝔂𝓽𝓱𝓲𝓷𝓰 4 𝓾 - 𝓛𝓐𝓝𝓨
+</button>
+
+<button onclick="playSong('https://open.spotify.com/track/5SwdrJLtyFyC926bXw5PCz?si=RZlZ6XuzQGqH9g2nBRTdKw')">
+    𝓘𝓝𝓘 𝓛𝓐𝓖𝓤 𝓖𝓘𝓛𝓐
+</button>
+
+<a href="index.html">
+    <button>Back</button>
+</a>
+  
+
+<div id="player">
+  <p>klik lagu dulu y</p>
+</div>
+
+<script>
+  function playSong(link) {
+    document.getElementById('player').innerHTML = `
+      <iframe 
+        src="${link}"
+        width="100%" 
+        height="80" 
+        frameborder="0"
+        allow="autoplay; encrypted-media">
+      </iframe>
+    `;
+  }
+</script>
+
+</body>
+</html>
